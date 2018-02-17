@@ -108,6 +108,9 @@ export default class App extends Component {
                         <li className='top-bar__button'><Link to='/'>Triangle</Link></li>
                         <li className='top-bar__button'><Link to='/points'>Points</Link></li>
                     </ul>
+                    <div className='triangle one'></div>
+                    <div className='triangle two'></div>
+                    <div className='triangle three'></div>
                     <Route exact path='/' render={props => 
                         <div className='main-body'>
                             <Data data={this.state} />

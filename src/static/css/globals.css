@@ -83,3 +83,33 @@ body{
     position: fixed;
     top: 70px;
 }
+.triangle{
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: -1;
+}
+.one{
+    top:0rem;
+    left:0rem;
+    border-top: 25rem solid transparent;
+    border-bottom: 25rem solid transparent;
+    border-left: 25rem solid green;
+    transform: rotateZ(-150deg);
+  }
+.two{
+    bottom: 0;
+    right: 0;
+    border-top: 35rem solid transparent;
+    border-bottom: 35rem solid transparent;
+    border-left: 35rem solid blue;
+    transform: rotateZ(150deg);  
+}
+.three{
+    bottom: -16rem;
+    right: 10rem;
+    border-top: 21rem solid transparent;
+    border-bottom: 29rem solid transparent;
+    border-left: 20rem solid yellow;
+    transform: rotateZ(50deg);
+}
