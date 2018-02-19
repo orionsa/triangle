@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Geo');
 
 html,body{
     height: 100%;
@@ -15,13 +16,15 @@ body{
     display:flex;
     justify-content:center;
     align-items: center;
-    background: #FFF6CE;
+    /* background: #FFF6CE; */
+    background: #5C9BFF;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
+    font-family: geo;
 }
 /*--------------------*/
 .main {
@@ -36,23 +39,25 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-
 .canvas{
-    /* width: 90%;
-    height: 80%; */
     background-color:#808080;
     border: 10px solid #D3D3D3;
     border-radius: 5px;
 }
-
 .points-container {
     display : flex;
     width: 100%;
-    justify-content: space-around;   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
 }
 .point {
-    width: 30%;
+    /* width: 30%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
+    margin-top: 6rem;
 }
 .button {
     width: 70px;
@@ -66,22 +71,24 @@ body{
     list-style: none;
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 80px;
     justify-content: center;
     align-items: center;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #D3D3D3;
+    /* background-color: #D3D3D3; */
+    background-color: #3E1EE2;
 }
 .top-bar__button{
     margin-left: 50px;
-    background-color: #FFEA87;
+    /* background-color: #FFEA87; */
     padding: 10px;
+    z-index: 2;
 }
 .main-body{
     position: fixed;
-    top: 70px;
+    top: 90px;
 }
 .triangle{
     position: fixed;
@@ -89,12 +96,74 @@ body{
     height: 0;
     z-index: -1;
 }
+.top-one{
+    top:0rem;
+    left:0rem;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 48.5px solid #3E8E99;
+    z-index: 1;
+    animation: leftToRight 5s linear infinite alternate
+}
+.top-two{
+    top:0rem;
+    right:0rem;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 48.5px solid #B0D1B9;
+    z-index: 1;
+    animation: rightToLeft 4.5s linear infinite alternate
+}
+.top-three{
+    top:0rem;
+    left:0rem;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 48.5px solid #55A7A4;
+    z-index: 1;
+    animation: leftToRight 3.5s linear infinite alternate
+}
+.top-four{
+    top:0rem;
+    right:0rem;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 48.5px solid #203359;
+    z-index: 1;
+    animation: rightToLeft 4s linear infinite alternate
+}
+.top-five{
+    top:0rem;
+    left:0rem;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 48.5px solid #0C265B;
+    z-index: 1;
+    animation: leftToRight 3s linear infinite alternate
+}
+.top-six{
+    top:0rem;
+    right:0rem;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 48.5px solid #697592;
+    z-index: 1;
+    animation: rightToLeft 3.5s linear infinite alternate
+}
+@keyframes leftToRight{
+    form {left: 0%; transform: rotateZ(0)}
+    to {left : calc(100% - 48.5px); transform: rotateZ(1440deg)}
+}
+@keyframes rightToLeft{
+    form {right: 0%; transform: rotateZ(0)}
+    to {right : calc(100% - 48.5px); transform: rotateZ(1080deg)}
+}
 .one{
     top:0rem;
     left:0rem;
     border-top: 25rem solid transparent;
     border-bottom: 25rem solid transparent;
-    border-left: 25rem solid green;
+    border-left: 25rem solid #3E8E99;
     transform: rotateZ(-150deg);
   }
 .two{
@@ -102,7 +171,7 @@ body{
     right: 0;
     border-top: 35rem solid transparent;
     border-bottom: 35rem solid transparent;
-    border-left: 35rem solid blue;
+    border-left: 35rem solid #0C265B;
     transform: rotateZ(150deg);  
 }
 .three{
@@ -110,6 +179,38 @@ body{
     right: 10rem;
     border-top: 21rem solid transparent;
     border-bottom: 29rem solid transparent;
-    border-left: 20rem solid yellow;
+    border-left: 20rem solid #55A7A4;
     transform: rotateZ(50deg);
+}
+.four{
+    top: 8rem;
+    left: 19rem;
+    border-top: 36rem solid transparent;
+    border-bottom: 40rem solid transparent;
+    border-left: 20rem solid #203359;
+    transform: rotateZ(137deg);
+}
+.five{
+    bottom: -13rem;
+    left: 18rem;
+    border-top: 29rem solid transparent;
+    border-bottom: 29rem solid transparent;
+    border-left: 20rem solid #B0D1B9;
+    transform: rotateZ(43deg);
+}
+.six{
+    top: 21rem;
+    right: 23rem;
+    border-top: 12rem solid transparent;
+    border-bottom: 22rem solid transparent;
+    border-left: 27rem solid #697592;
+    transform: rotateZ(50deg);
+}
+.seven{
+    top: -25rem;
+    left: 57rem;
+    border-top: 66rem solid transparent;
+    border-bottom: 49rem solid transparent;
+    border-left: 12rem solid #9FA6B6;
+    transform: rotateZ(-59deg);
 }

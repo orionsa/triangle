@@ -3,7 +3,7 @@ import Points from './Points'
 import Tringle from './Tringle'
 import Data from './Data'
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 export default class App extends Component {
     constructor(props) {
@@ -107,24 +107,34 @@ export default class App extends Component {
                     <ul className='top-bar'>
                         <li className='top-bar__button'><Link to='/'>Triangle</Link></li>
                         <li className='top-bar__button'><Link to='/points'>Points</Link></li>
+                        <li className='triangle top-one'></li>
+                        <li className='triangle top-two'></li>
+                        <li className='triangle top-three'></li>
+                        <li className='triangle top-four'></li>
+                        <li className='triangle top-five'></li>
+                        <li className='triangle top-six'></li>
                     </ul>
                     <div className='triangle one'></div>
                     <div className='triangle two'></div>
                     <div className='triangle three'></div>
-                    <Route exact path='/' render={props => 
+                    <div className='triangle four'></div>
+                    <div className='triangle five'></div>
+                    <div className='triangle six'></div>
+                    <div className='triangle seven'></div>
+                    <Route exact path='/' render={props =>
                         <div className='main-body'>
                             <Data data={this.state} />
                             <Tringle ax={this.state.ax}
-                                     ay={this.state.ay}
-                                     bx={this.state.bx}
-                                     by={this.state.by}
-                                     cx={this.state.cx}
-                                     cy={this.state.cy}
+                                ay={this.state.ay}
+                                bx={this.state.bx}
+                                by={this.state.by}
+                                cx={this.state.cx}
+                                cy={this.state.cy}
                             />
                         </div>} />
-                    <Route path='/points' render={(props)=> 
-                        <Points draw={this.draw}/>      
-                } />
+                    <Route path='/points' render={(props) =>
+                        <Points draw={this.draw} />
+                    } />
                 </div>
             </Router>
         )

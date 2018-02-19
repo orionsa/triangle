@@ -9,7 +9,7 @@ export default class Tringle extends Component {
         let ctx = canvas.getContext('2d');
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.beginPath();
-        ctx.fillStyle = "#FFEA87";
+        ctx.fillStyle = "#5C9BFF";
         ctx.moveTo(this.props.ax, this.props.ay);
         ctx.lineTo(this.props.bx, this.props.by);
         ctx.lineTo(this.props.cx, this.props.cy);

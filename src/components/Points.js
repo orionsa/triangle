@@ -7,17 +7,17 @@ export default class Points extends Component {
     render(){
         return(
             <div className='points-container'>
-                <div className='point-a' className='point'>
+                <div className='point-a point'>
                     <p>Point A</p>
                     <input className='a-x' />
                     <input className='a-y' />
                 </div>
-                <div className='point-b' className='point'>
+                <div className='point-b point'>
                     <p>Point B</p>
                     <input className='b-x' />
                     <input className='b-y' />
                 </div>
-                <div className='point-c' className='point'>
+                <div className='point-c point'>
                     <p>Point C</p>
                     <input className='c-x' />
                     <input className='c-y' />
