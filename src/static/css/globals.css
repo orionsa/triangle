@@ -103,7 +103,7 @@ body{
     border-bottom: 28px solid transparent;
     border-left: 48.5px solid #3E8E99;
     z-index: 1;
-    animation: leftToRight 5s linear infinite alternate
+    animation: leftToRight 4s linear infinite alternate
 }
 .top-two{
     top:0rem;
@@ -112,7 +112,7 @@ body{
     border-bottom: 28px solid transparent;
     border-left: 48.5px solid #B0D1B9;
     z-index: 1;
-    animation: rightToLeft 4.5s linear infinite alternate
+    animation: rightToLeft 3.5s linear infinite alternate
 }
 .top-three{
     top:0rem;
@@ -121,7 +121,7 @@ body{
     border-bottom: 28px solid transparent;
     border-left: 48.5px solid #55A7A4;
     z-index: 1;
-    animation: leftToRight 3.5s linear infinite alternate
+    animation: leftToRight 3s linear infinite alternate
 }
 .top-four{
     top:0rem;
@@ -130,7 +130,7 @@ body{
     border-bottom: 28px solid transparent;
     border-left: 48.5px solid #203359;
     z-index: 1;
-    animation: rightToLeft 4s linear infinite alternate
+    animation: rightToLeft 2.75s linear infinite alternate
 }
 .top-five{
     top:0rem;
@@ -139,7 +139,7 @@ body{
     border-bottom: 28px solid transparent;
     border-left: 48.5px solid #0C265B;
     z-index: 1;
-    animation: leftToRight 3s linear infinite alternate
+    animation: leftToRight 3.25s linear infinite alternate
 }
 .top-six{
     top:0rem;
@@ -148,7 +148,7 @@ body{
     border-bottom: 28px solid transparent;
     border-left: 48.5px solid #697592;
     z-index: 1;
-    animation: rightToLeft 3.5s linear infinite alternate
+    animation: rightToLeft 3.75s linear infinite alternate
 }
 @keyframes leftToRight{
     form {left: 0%; transform: rotateZ(0)}
